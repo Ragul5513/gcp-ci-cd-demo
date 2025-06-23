@@ -38,7 +38,7 @@ jobs:
       - name: Build and Push Docker image
         run: | 
           docker build -t us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/flask-app .
-          docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/flask-app .
+          docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/my-repo/flask-app
 
       # Task 3: Deploy to Cloud Run
       - name: Deploy to Cloud Run
